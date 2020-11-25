@@ -1,18 +1,4 @@
 
-//
-// This is example code from Chapter 6.7 "Trying the second version" of
-// "Software - Principles and Practice using C++" by Bjarne Stroustrup
-//
-
-/*
-    This file is known as calculator02buggy.cpp
-    I have inserted 5 errors that should cause this not to compile
-    I have inserted 3 logic errors that should cause the program to give wrong results
-    First try to find an remove the bugs without looking in the book.
-    If that gets tedious, compare the code to that in the book (or posted source code)
-    Happy hunting!
-*/
-
 #include "std_lib_facilities.h"
 
 //------------------------------------------------------------------------------
@@ -180,8 +166,7 @@ double expression()
 int main()
 try
 {
-    cout << "Welcome to our simple calculator.\n"
-         << "Please enter expressions using floating-point numbers.\n";
+
 
     // ERROR.8.syntax No val variable declared
     double val = 0;

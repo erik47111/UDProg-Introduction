@@ -27,6 +27,15 @@ void swap_cr(const int& a, const int& b) // nem fordiltja le mert a és b csak o
 	b = temp;
 }
 */
+void swap_double(double& a, double& b) // objektum referenciát fogunk át adni// az "a" egy új név lessz az x objektumra
+{
+	double temp;
+	
+	temp = a;
+	a = b;
+	b = temp;
+}
+
 
 int main()
 {
@@ -57,11 +66,10 @@ int main()
 */
 	double dx = 7.7;
 	double dy = 9.9;
-/*
-	swap_v(dx,dy); // leforditja de a fv csak a másolatokat kezeli igy nm történik csere
+
+	swap_double(dx,dy); // leforditja de a fv csak a másolatokat kezeli igy nm történik csere
 	cout << "dx: " << dx << " dy:" << dy << '\n';
-	swap_r(dx,dy); // U.a a problléma mint elözzőnél double int --> info loss lessz
-*/
+	swap_double(dx,dy); // U.a a problléma mint elözzőnél double int --> info loss lessz
 	cout << "dx: " << dx << " dy:" << dy << '\n'; 
 
 //	swap_v(7.7,9.9);// *
